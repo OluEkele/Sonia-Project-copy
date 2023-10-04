@@ -1,0 +1,442 @@
+
+.upper-nav{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: absolute;
+    top: 0;
+}
+.upper-nav .left-image{
+    background-image: url(/Sonia-Project/image/about-me-image/ekele.png.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 120vh;
+    width: 50%;
+}
+.upper-nav .right-content{
+    height: 130vh;
+    width: 50%;
+    background-color: #0b0b0c;
+    display: flex;
+    overflow: hidden;
+}
+
+.upper-nav .right-content .content{
+    position: absolute;
+    top: 40%;
+    left: 55%;
+}
+.upper-nav .right-content .content a{
+    color: white;
+    font-size: 2.5rem;
+    text-decoration: none;
+    letter-spacing: 5px;
+    font-weight: 300;
+}
+.upper-nav .right-content .content a:before{
+    display:block;
+    content: '';
+    height: 2px;
+    width: 80px;
+    font-weight: 300;
+    border-radius: 5px;
+    border-bottom: solid 1px #fff; 
+    position: absolute;
+    top: -5%;
+}
+.upper-nav .right-content .content p{
+    color: white;
+    font-size: 1rem;
+    margin-top: 30px;
+    width: 650px;
+    line-height: 25px;
+    margin-bottom: 80px;
+    font-weight: 200;
+    
+}
+
+.upper-nav .right-content .content button{
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 4px;
+    color: white;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+
+}
+.about-me-dot{
+    position: absolute;
+    right: -13%;
+    top: 25%;
+    color: gray;
+    filter: brightness(20%); 
+}
+.lower-content{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 1000px;
+    height: 800px;
+}
+.lower-content .right-image{
+    background-image: url(/Sonia-Project/image/about-me-image/about2.jpg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+}
+.left-content{
+    background-color: #fff;
+    width: 50%;
+    height: 800px;
+}
+.empty{
+    height: 60px;
+    width: 100%;
+    background-color: #fff;
+}
+.left-content .ream{
+    position: absolute;
+    font-size: 4rem;
+    font-weight: 700;
+    left: -20px;
+    color: #1616184d;
+
+}
+.sub-left-content{
+    margin-left: 200px;
+    margin-top: 100px;
+    margin-right: -100px;
+    background-color: #fff;
+    height: 700px;
+}
+.left-content h6{
+    font-size: 2rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+    padding-bottom: 30px;
+    text-align: left;
+}
+.sub-left-content p{
+    font-size: 0.8rem;
+    font-weight: 100px;
+    width: 600px;
+    color: rgba(0, 0, 0, 0.452);
+    margin-bottom: 30px;
+    line-height: 25px;
+    text-align: left;
+}
+.patience{
+    font-size: 1rem;
+    font-weight: 100;
+    margin-bottom: 20px;
+    padding: 5px 0 0 0;
+    text-align: left;
+}
+.patience::before{
+    display:block;
+    content: '';
+    width: 600px;
+    font-weight: 300;
+    height: 3px;
+    background-color: rgb(5, 5, 5); 
+    background-image: linear-gradient(to right, rgb(8, 8, 8) 62%, rgba(138, 138, 132, 0.952) 35%);
+}
+.patience button{
+    position: absolute;
+    font-size: 0.8rem;
+    font-weight: 300;
+    background-color: black;
+    color: #fff;
+    padding: 5px 10px;
+    margin-top: 5px;
+    left: 33%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+.creative{
+    font-size: 1rem;
+    font-weight: 100;
+    margin-bottom: 20px;
+    padding: 5px 0 0 0;
+    text-align: left;
+}
+.creative::before{
+    display:block;
+    content: '';
+    width: 600px;
+    font-weight: 300;
+    height: 3px;
+     background-color: rgb(5, 5, 5); 
+    background-image: linear-gradient(to right, rgb(8, 8, 8) 75%, rgba(138, 138, 132, 0.952) 25%);
+}
+.creative button{
+    position: absolute;
+    font-size: 0.8rem;
+    font-weight: 100;
+    background-color: black;
+    color: #fff;
+    left: 38%;
+    padding: 5px 10px;
+    margin-top: 5px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+.commited{
+    font-size: 1rem;
+    font-weight: 100;
+    margin-bottom: 20px;
+    padding: 5px 0 0 0;
+    text-align: left;
+}
+.commited::before{
+    display:block;
+    content: '';
+    width: 600px;
+    font-weight: 300;
+    height: 3px;
+     background-color: rgb(5, 5, 5); 
+    background-image: linear-gradient(to right, rgb(8, 8, 8) 85%, rgba(138, 138, 132, 0.952) 15%);
+}
+.commited button{
+    position: absolute;
+    font-size: 0.8rem;
+    font-weight: 300;
+    padding: 5px 10px;
+    margin-top: 5px;
+    background-color: black;
+    color: #fff;
+    left: 41%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+.last-nav{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: absolute;
+    top: 1800px;
+}
+.last-nav .lower-image{
+    background-image: url(/Sonia-Project/image/about-me-image/about3.jpg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.really{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    width: 690px;
+    height: 150px;
+    background-color: #fff;
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 5px;
+    color: rgba(39, 38, 38, 0.13);
+}
+.really p{
+    position: absolute;
+    right: -25px;
+    top: -30px;
+    overflow: hidden;
+}
+.right-last-nav p{
+    width: 800px;
+    padding: 100px 40px 40px 80px;
+    background-color: #fff;
+    font-size: 1rem;
+    line-height: 40px;
+    color: rgba(36, 35, 35, 0.836);
+    font-weight: 100;
+}
+.right-last-nav{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    width: 800px;
+    top: 15%;
+    background-color: #fff;
+    
+}
+.right-last-nav::before{
+    display:block;
+    position: absolute;
+    content: '';
+    width: 100px;
+    font-weight: 300;
+    height: 2px;
+    background-color: rgba(5, 5, 5, 0.767); 
+    top: 10%;
+    left: 10%;
+}
+.percent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 0 100px;
+}
+.landscape,
+.protratis,
+.studio{
+    display: flex;
+    flex-direction: column;
+
+}
+.landscape a{
+    height: 100px;
+    width: 100px;
+    position: relative;
+    padding: 40px 45px 40px 35px;
+    margin-bottom: 10px;
+}
+.landscape a::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%; 
+    border: 5px solid transparent;
+    background: linear-gradient(360deg, rgb(10, 10, 10) 94%, white 6%) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+}
+
+.protratis a{
+    height: 100px;
+    width: 100px;
+    position: relative;
+    padding: 40px 45px 40px 35px;
+    margin-bottom: 10px;
+}
+.protratis a::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%; 
+    border: 5px solid transparent;
+    background: linear-gradient(-45deg, rgb(10, 10, 10) 68%, white 32%) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+}
+
+.protratis span{
+    padding-left: 15px;
+}
+.studio a{
+    height: 100px;
+    width: 100px;
+    position: relative;
+    padding: 40px 45px 40px 35px;
+    margin-bottom: 10px;
+}
+.studio a::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%; 
+    border: 5px solid transparent;
+    background: linear-gradient(30deg, white 75%, rgb(10, 10, 10) 25%) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+}
+.studio span{
+    padding-left: 15px;
+}
+.percent span{
+    margin-bottom: 80px;
+}
+
+
+.footer-bottom{
+    width: 600px;
+    height: 180px;
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+    top: 2450px;
+    overflow-y: hidden;
+    
+}
+.footer-bottom img{
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+
+.copywrite-footer1{
+    font-size: 14px;
+    color: #212529af;
+    background-color: #fff;
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    top: 2600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.copywrite-footer1 a{
+    text-decoration: none;
+    color: #212121;
+    z-index: 2;
+}
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s;
+    width: 100%;
+    height: 100%;
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+  
+  #myDiv {
+    display: none;
+    text-align: center;
+  }
+
+

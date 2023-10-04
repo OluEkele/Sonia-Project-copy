@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    body{
+      background-color: gray;
+    }
+    li{
+      list-style: none;
+      color: white;
+      padding: 10px;
+      background-color: blueviolet;
+      border-radius: 4px;
+      border: none;
+      outline: none;
+    }
+    .scroller{
+      max-width: 600px;
+      position: fixed;
+      left: 50%;
+
+    }
+    .scroller__inner{
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 1rem;
+      padding: 20px 0;
+      animation: scroll 40s linear infinite;
+    }
+
+    .gradient-border-mask {
+      position: relative;
+      padding: 15px 20px;
+      width: 60px;
+      height: 60px;
+    }
+    
+    .gradient-border-mask::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 50%; 
+      border: 5px solid transparent;
+      background: linear-gradient(rgb(10, 10, 10) 95%, white 5%) border-box;
+      -webkit-mask:
+        linear-gradient(#fff 0 0) padding-box, 
+        linear-gradient(#fff 0 0);
+      -webkit-mask-composite: destination-out;
+      mask-composite: exclude;
+    }
+
+    /*.scroller[data-animated = true]{
+      overflow: hidden;
+      -webkit-mask: linear-gradient(90deg, transparent, rgba(255, 255, 255) 20%, white 80%, transparent);
+      mask: linear-gradient(90deg, transparent, rgba(255, 255, 255) 20%, white 80%, transparent);
+      width: fit-content;
+    }
+    .scroller[data-animated = true] .scroller__inner{
+      flex-wrap: nowrap;
+      animation: scroll 40s linear infinite;
+    }*/
+    @keyframes scroll{
+      from{
+        transform: translate(0);
+      }
+      to{
+        transform: translate(-50% -o.5rem);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="scroller" data-direction="left">
+    <ul class="tag-list scroller__inner">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JS</li>
+      <li>REACT</li>
+      <li>PYTHON</li>
+      <li>NODE</li>
+      <li>CDN</li>
+      <li>PANDANS</li>
+    </ul>
+  </div>
+
+
+  <div class="gradient-border-mask">Hello</div>
+
+
+  <script>
+    const scroller = document.querySelector(".body-slide");
+    if(!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+     addAmination();
+    }
+    function addAmination() {
+      scroller.forEach((scroller) =>{
+       scroller.setAttribute('data-animation', 'true');
+
+     const scrollerImage = scroller.querySelector('.image-slide');
+     const scrollerContent = Array.from(scroller.children);
+
+     scrollerContent.forEach((item) => {
+       const duplicateItem = item.cloneNode(true);
+       duplicateItem.setAttribute("aria-hidden", "true");       scrollerImage.appendChild(duplicateItem);
+     });
+   });
+ }
+  </script>
+</body>
+</html>

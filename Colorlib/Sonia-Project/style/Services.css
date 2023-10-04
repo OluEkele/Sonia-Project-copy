@@ -1,0 +1,345 @@
+.first-container{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+}
+.first-container .left-image{
+    background-image: url(/Sonia-Project/image/service/services.jpg.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+
+}
+.first-container .right-content{
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100vh;
+    background-color: #101013;
+    top: 0;
+}
+.right-content .quality{
+    position: absolute;
+    top: 30%;
+    color: white;
+    width: 60%;
+    font-size: 3rem;
+    text-align: left;
+    left: 20%;
+    font-weight: 300;
+}
+.right-content .quality::before{
+    content: "";
+    position: absolute;
+    height: 1.5px;
+    width: 100px;
+    background-color: #fff;
+    top: -27%;
+}
+.right-content p{
+    position: absolute;
+    top: 47%;
+    color: white;
+    width: 70%;
+    font-size: 1rem;
+    text-align: left;
+    left: 20%;
+    font-weight: 200;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+.right-content button{
+    position: absolute;
+    top: 60%;
+    color: white;
+    font-size: 1.6rem;
+    text-align: left;
+    left: 20%;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.right-content button:hover{
+    background-color: #fff;
+    color: #212529;
+}
+.background{
+    position: absolute;
+    top: 400px;
+    width: 105%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+}
+.background .line{
+    width: 0.5px;
+    height: 3525px;
+    font-weight: 200;
+    border: 0.5px solid rgba(0, 0, 0, 0.144);
+}
+.background .bold{
+    border: 0.5px solid rgba(0, 0, 0, 0.288);
+}
+.second-container{
+    position: absolute;
+    top: 900px;
+    left: 17%;
+    width: 70%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.second-container .top-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    text-align: left;
+}
+.wedding-photo h6,
+.studio-photo h6,
+.fashion-photo h6,
+.pro-video h6,
+.lands-photo h6,
+.photo-journalism h6{
+    font-size: 1.5rem;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    text-align: left;
+    font-weight: 300;
+}
+.wedding-photo p,
+.studio-photo p,
+.fashion-photo p,
+.pro-video p,
+.lands-photo p,
+.photo-journalism p{
+    font-size: 0.8rem;
+    text-align: left;
+    font-weight: 300;
+    line-height: 20px;
+    width: 300px;
+}
+.third-container{
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    top: 500px;
+}
+.image-right{
+    background-image: url(/Sonia-Project/image/service/tes.jpg.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: -190px;
+    width: 1200px;
+    height: 600px;
+    top: 0;
+    z-index: -1;
+}
+.testimonial-dot{
+    position: absolute;
+    width: 800px;
+    height: 500px;
+    top: 50px;
+    left: -230px;
+    background-color: #f8f6f6;
+    z-index: 1;
+}
+.text-slide-container{
+    width: 6800px;
+    position: relative;
+    height: 500px;
+    text-align: left;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 100px;
+    left: -100px;
+    z-index: 6;
+    position: absolute;
+    animation-name: sque;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: backwards;
+    animation-duration: 10s;
+    
+}
+.third-container h6{
+    position: absolute;
+    top: 30%;
+    font-size: 2rem;
+    font-weight: 300;
+    margin-left: 100px;
+    z-index: 2;
+}
+.third-container h6::before{
+    position: absolute;
+    content: "";
+    top: -20px;
+    display: block;
+    width: 100px;
+    height: 1.5px;
+    background-color: rgba(0, 0, 0, 0.623);
+    z-index: 2; 
+}
+.text-slide{
+    
+    margin-top: 200px;
+    margin-left: 50px;
+    font-size: 0.9rem;
+    line-height: 20px;
+    font-weight: 200;
+    color: #191c1fb6;
+    font-style: italic;
+    z-index: 5;
+    height: 300px;
+    width: 600px;
+    user-select: none;
+    overflow: hidden;
+    
+   
+}
+.seda {
+    animation-name: sque;
+    animation-duration: 1.5s; 
+    
+}
+.text-slide p{
+    width: 400px;
+}
+
+.text-slide span{
+   margin-top: 50px; 
+   position: absolute;    
+}
+/* The dots/bullets/indicators */
+.dott{
+    position: absolute;
+    top: 200px;
+    
+    z-index: 2;
+}
+.dot-service {
+    height: 10px;
+    width: 10px;
+    margin-left: 100px;
+    margin-top: 20px;
+    border: 0.2px solid #aaa7a7;
+    border-radius: 50%;
+    display: block;
+    transition: background-color 0.6s ease;
+    z-index: 2;
+}
+
+ 
+.work {
+    background-color: #717171;
+}
+  
+  /* Fading animation */
+
+.active-dot, .dot-service:hover {
+    background-color: #717171;
+}
+
+  
+@keyframes sque {
+    0% {
+        transform: translate(0);
+    } 
+    13% {
+        transform: translate(-800px);
+    }
+    26% {
+        transform: translate(-1700px);
+    } 
+    39% {
+        transform: translate(-2600px);
+    }
+    52% {
+        transform: translate(-3500px);
+    } 
+    65% {
+        transform: translate(-4350px);
+    }
+    78% {
+        transform: translate(-5200px);
+    } 
+    100% {
+        transform: translate(-6150px);
+    } 
+    
+    
+}
+  
+
+.counting-number{
+    position: absolute;
+    top: 2200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    width: 100%;
+}
+.counting-number p{
+    font-size: 1.5rem;
+    padding: 20px 0;
+}
+.conclusion1{
+    position: absolute;
+    top: 2500px;
+    width: 100%;
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(216, 213, 213, 0.438);
+}
+.conclusion1-text{
+    width: 65%;
+    font-size: 65px;
+    font-weight: 200;
+    color: #222324e3;
+    line-height: 60px;
+    margin-top: 100px;
+}
+.conclusion1-text strong{
+    font-weight: 300;
+    font-size: 50px;
+    
+}
+.conclusion1 button{
+    margin-top: 70px;
+    padding: 20px 40px;
+    margin-bottom: 100px;
+    text-transform: uppercase;
+    font-size: 12px;
+    background-color: #fff;
+    outline: none;
+    border: 0.5px solid #212529
+}
+.copywrite-footer{
+    font-size: 14px;
+    color: #212529af;
+}
+.copywrite-footer a{
+    text-decoration: none;
+    color: #212529a1;
+}
+
